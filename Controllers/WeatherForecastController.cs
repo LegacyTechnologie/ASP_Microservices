@@ -23,7 +23,7 @@ namespace myMicroservice.Controllers
             return id;
         }
 
-        [HttpGet("{name}", Name = "GetName")]
+        [HttpGet("name/{name}", Name = "GetName")]
         public String GetName(String name)
         {
             return "my name is "+name;

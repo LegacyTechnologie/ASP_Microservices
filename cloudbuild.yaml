@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'aspdotnet_microservices', '--image', 'gcr.io/myproject-ahsan-123/my-aspnet-microservices', '--region', 'us-central1', '--platform', 'managed']
+  args: ['run', 'deploy', 'aspdotnet-microservices', '--image', 'gcr.io/myproject-ahsan-123/my-aspnet-microservices', '--region', 'us-central1', '--platform', 'managed']
 images:
 - gcr.io/myproject-ahsan-123/my-aspnet-microservices

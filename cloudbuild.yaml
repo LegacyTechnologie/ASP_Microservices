@@ -1,5 +1,5 @@
 steps:
-# Build the container images
+# Build the container image
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/myproject-ahsan-123/my-aspnet-microservices', '.']
 # Push the container image to Container Registry

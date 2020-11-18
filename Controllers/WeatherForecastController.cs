@@ -26,7 +26,7 @@ namespace myMicroservice.Controllers
         [HttpGet("name/{name}", Name = "GetName")]
         public String GetName(String name)
         {
-            return "my name is "+name;
+            return "<h1>My name is "+name+".</h1>";
         }
     }
 }

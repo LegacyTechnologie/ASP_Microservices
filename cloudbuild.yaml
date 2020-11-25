@@ -5,7 +5,7 @@ steps:
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/myproject-ahsan-123/my-aspnet-microservices']
-# Deploy container image to Cloud Run
+# Deploy container image to Cloud Run1
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
   args: ['run', 'deploy', 'my-aspdotnet-microservices', '--allow-unauthenticated', '--image', 'gcr.io/myproject-ahsan-123/my-aspnet-microservices', '--region', 'us-central1', '--platform', 'managed']
